@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+skinparam componentStyle rectangle
+component "hello 2.10-3build1" as p0
+component "libc6 2.39-0ubuntu8" as p1
+component "libgcc-s1 14-20240412-0ubuntu1" as p2
+component "gcc-14-base 14-20240412-0ubuntu1" as p3
+p0 --> p1
+p1 --> p2
+p2 --> p3
+p2 --> p1
+@enduml

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="DESCRIPTION" style="width:1342px;height:165px;background:#FFFFFF;" width="1342px" height="165px" viewBox="0 0 1342 165" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css">
+<?plantuml 1.2026.10?>
+<defs/>
+<g font-family="sans-serif" lengthAdjust="spacing">
+<!--entity p0-->
+<g class="entity" data-qualified-name="p0" id="ent0001" data-source-line="3">
+<rect x="7" y="7" width="115.737" height="37.609" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/>
+<text x="17" y="31.533" fill="#000" font-size="14" textLength="95.737">jq 1.7.1-3build1</text>
+</g>
+<!--entity p1-->
+<g class="entity" data-qualified-name="p1" id="ent0002" data-source-line="4">
+<rect x="594" y="42" width="142.985" height="37.609" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/>
+<text x="604" y="66.533" fill="#000" font-size="14" textLength="122.985">libc6 2.39-0ubuntu8</text>
+</g>
+<!--entity p2-->
+<g class="entity" data-qualified-name="p2" id="ent0003" data-source-line="5">
+<rect x="183" y="43" width="137.53" height="37.609" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/>
+<text x="193" y="67.533" fill="#000" font-size="14" textLength="117.53">libjq1 1.7.1-3build1</text>
+</g>
+<!--entity p3-->
+<g class="entity" data-qualified-name="p3" id="ent0004" data-source-line="6">
+<rect x="797" y="42" width="224.709" height="37.609" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/>
+<text x="807" y="66.533" fill="#000" font-size="14" textLength="204.709">libgcc-s1 14-20240412-0ubuntu1</text>
+</g>
+<!--entity p4-->
+<g class="entity" data-qualified-name="p4" id="ent0005" data-source-line="7">
+<rect x="381" y="114" width="153.103" height="37.609" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/>
+<text x="391" y="138.533" fill="#000" font-size="14" textLength="133.103">libonig5 6.9.9-1build1</text>
+</g>
+<!--entity p5-->
+<g class="entity" data-qualified-name="p5" id="ent0006" data-source-line="8">
+<rect x="1082" y="42" width="246.509" height="37.609" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/>
+<text x="1092" y="66.533" fill="#000" font-size="14" textLength="226.509">gcc-14-base 14-20240412-0ubuntu1</text>
+</g>
+<!--link p0 to p1-->
+<g class="link" data-entity-1="ent0001" data-entity-2="ent0002" id="lnk7" data-source-line="9" data-link-type="dependency">
+<path d="M123.17,23.59 C211.61,20.69 386.76,18.18 534,36 C553.47,38.36 569.479,40.96 588.749,44.65" style="stroke:#181818;stroke-width:1;" fill="none" id="p0-to-p1"/>
+<polygon points="593.66,45.59,585.573,39.969,588.749,44.65,584.068,47.826,593.66,45.59" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<!--link p0 to p2-->
+<g class="link" data-entity-1="ent0001" data-entity-2="ent0003" id="lnk8" data-source-line="10" data-link-type="dependency">
+<path d="M123.02,37.09 C141.91,40.77 158.232,43.943 177.882,47.773" style="stroke:#181818;stroke-width:1;" fill="none" id="p0-to-p2"/>
+<polygon points="182.79,48.73,174.721,43.082,177.882,47.773,173.191,50.934,182.79,48.73" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<!--link p1 to p3-->
+<g class="link" data-entity-1="ent0002" data-entity-2="ent0004" id="lnk9" data-source-line="11" data-link-type="dependency">
+<path d="M737.15,72.71 C755.84,73.53 771.49,73.894 791.78,73.754" style="stroke:#181818;stroke-width:1;" fill="none" id="p1-to-p3"/>
+<polygon points="796.78,73.72,787.753,69.782,791.78,73.754,787.808,77.782,796.78,73.72" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<!--link p3 to p1-->
+<g class="link" data-entity-1="ent0004" data-entity-2="ent0002" id="lnk13" data-source-line="15" data-link-type="dependency">
+<path d="M796.78,47.54 C776.49,47.38 760.835,47.498 742.145,48.368" style="stroke:#181818;stroke-width:1;" fill="none" id="p3-to-p1"/>
+<polygon points="737.15,48.6,746.326,52.177,742.145,48.368,745.954,44.186,737.15,48.6" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<!--link p2 to p1-->
+<g class="link" data-entity-1="ent0003" data-entity-2="ent0002" id="lnk10" data-source-line="12" data-link-type="dependency">
+<path d="M321.41,61.83 C396.83,61.65 512.56,61.372 588.85,61.182" style="stroke:#181818;stroke-width:1;" fill="none" id="p2-to-p1"/>
+<polygon points="593.85,61.17,584.84,57.192,588.85,61.182,584.86,65.192,593.85,61.17" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<!--link p2 to p4-->
+<g class="link" data-entity-1="ent0003" data-entity-2="ent0005" id="lnk11" data-source-line="13" data-link-type="dependency">
+<path d="M307.53,81.03 C336.73,91.21 367.869,102.084 397.099,112.274" style="stroke:#181818;stroke-width:1;" fill="none" id="p2-to-p4"/>
+<polygon points="401.82,113.92,394.638,107.18,397.099,112.274,392.005,114.734,401.82,113.92" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<!--link p3 to p5-->
+<g class="link" data-entity-1="ent0004" data-entity-2="ent0006" id="lnk12" data-source-line="14" data-link-type="dependency">
+<path d="M1022.07,61 C1041.56,61 1056.94,61 1076.71,61" style="stroke:#181818;stroke-width:1;" fill="none" id="p3-to-p5"/>
+<polygon points="1081.71,61,1072.71,57,1076.71,61,1072.71,65,1081.71,61" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<!--link p4 to p1-->
+<g class="link" data-entity-1="ent0005" data-entity-2="ent0002" id="lnk14" data-source-line="16" data-link-type="dependency">
+<path d="M512.89,113.99 C542.81,103.53 575.11,92.239 605.08,81.769" style="stroke:#181818;stroke-width:1;" fill="none" id="p4-to-p1"/>
+<polygon points="609.8,80.12,599.984,79.312,605.08,81.769,602.623,86.864,609.8,80.12" fill="#181818" style="stroke:#181818;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/>
+</g>
+<?plantuml-src VOvB3eCW54NdhEB5EOIVjawwYQu0aLei1LGSTFVL-8anJMSdkUUTF6SU2LA0tZRF1BNjZKusU3Iyh8-gLs_GuHs3DpxTqySPc0Nb6sVGFa3MTi38XJ0igj6wccMW1eZqg3XRwG8u4IMcOpNwD5uNYvsijcE_OloaDLhZOJ8bvfHBAXdVkkk1E1q4RviS2bAI4hDZMHx5EJirApMOF-qSHGeOt-RlD-8eieK4YdnVLv8eYeNodQPLhlG5?>
+</g>
+</svg>

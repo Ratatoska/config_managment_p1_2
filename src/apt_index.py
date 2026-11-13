@@ -10,7 +10,7 @@ from urllib.request import urlopen
 TIMEOUT = 30
 TERM = re.compile(
     r"([a-z0-9][a-z0-9+.-]*)(?::[a-z0-9-]+)?"
-    r"(?:\s*\((<<|<=|=|>=|>>)\s*([^\s()]+)\))?"
+    r"(?:\s*\((<<|<=|=|>=|>>)\s*([A-Za-z0-9.+:~\-]+)\))?"
 )
 
 

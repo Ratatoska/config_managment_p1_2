@@ -1,0 +1,7 @@
+package,jq
+repository,https://archive.ubuntu.com/ubuntu/dists/noble/main/binary-amd64/Packages.xz
+test_mode,false
+version,1.7.1-3build1
+output,../build/jq.svg
+max_depth,3
+exclude,
