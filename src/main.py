@@ -5,28 +5,24 @@ import csv
 import lzma
 from pathlib import Path
 
-from apt_index import download_index, exact_release
 from config import load_config
+from graph import build_graph, print_graph
+from repository import from_apt, from_test
 
-DEFAULT_CONFIG = Path(__file__).resolve().parents[1] / "examples/hello.csv"
+DEFAULT_CONFIG = Path(__file__).resolve().parents[1] / "examples/diamond.csv"
 
 
 def main():
-    """Получить прямые зависимости из указанного индекса Ubuntu."""
+    """Построить граф для выбранного источника данных."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("config", nargs="?", type=Path, default=DEFAULT_CONFIG)
     args = parser.parse_args()
     try:
         config = load_config(args.config)
-        if config.test_mode:
-            raise ValueError("Тестовый граф будет поддержан на этапе 3")
-        packages = download_index(config.repository)
-        release = exact_release(packages, config.package, config.version)
-        print(f"{release.name} {release.version}:")
-        for group in release.groups:
-            print(" | ".join(map(str, group)))
-        if not release.groups:
-            print("Нет прямых зависимостей")
+        source = from_test if config.test_mode else from_apt
+        root, neighbors = source(config)
+        graph = build_graph(root, neighbors, config.max_depth, config.exclude)
+        print_graph(graph)
     except (ValueError, OSError, csv.Error, lzma.LZMAError) as error:
         parser.exit(1, f"Ошибка: {error}\n")
 

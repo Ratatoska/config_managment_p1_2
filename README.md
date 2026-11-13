@@ -2,12 +2,15 @@
 
 **Вариант 8 · Комаров В.Ю. · ИКБО-41-25**
 
-Этап 2: программа читает официальный индекс Ubuntu по URL и показывает
-прямые зависимости указанной версии из полей `Pre-Depends` и `Depends`.
+Этап 3: рекурсивный BFS строит граф транзитивных зависимостей Ubuntu
+или тестового репозитория. Учитываются глубина и фильтр.
 Нужен Python 3.10+, сторонних библиотек нет.
 
 ```bash
 python -X utf8 src/main.py examples/hello.csv
+python -X utf8 src/main.py examples/diamond.csv
+python -X utf8 src/main.py examples/cycle.csv
+python -X utf8 src/main.py examples/filtered.csv
 python -m unittest discover -s tests -v
 ```
 
