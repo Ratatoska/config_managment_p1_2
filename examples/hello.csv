@@ -1,0 +1,7 @@
+package,hello
+repository,https://archive.ubuntu.com/ubuntu/dists/noble/main/binary-amd64/Packages.xz
+test_mode,false
+version,2.10-3build1
+output,../build/hello.svg
+max_depth,3
+exclude,

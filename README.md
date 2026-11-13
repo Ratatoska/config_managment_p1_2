@@ -2,11 +2,12 @@
 
 **Вариант 8 · Комаров В.Ю. · ИКБО-41-25**
 
-Этап 1: консольный прототип читает семь настроек из CSV.
+Этап 2: программа читает официальный индекс Ubuntu по URL и показывает
+прямые зависимости указанной версии из полей `Pre-Depends` и `Depends`.
 Нужен Python 3.10+, сторонних библиотек нет.
 
 ```bash
-python -X utf8 src/main.py examples/diamond.csv
+python -X utf8 src/main.py examples/hello.csv
 python -m unittest discover -s tests -v
 ```
 
