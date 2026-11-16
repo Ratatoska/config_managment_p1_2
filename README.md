@@ -50,8 +50,14 @@ python -X utf8 -m unittest discover -s tests -v
 python -X utf8 src/main.py examples/hello.csv --svg
 ```
 
-Примеры картинок: [hello](examples/diagrams/hello.svg),
-[jq](examples/diagrams/jq.svg), [zlib1g](examples/diagrams/zlib.svg).
+Готовые графы для трёх пакетов:
+
+![Граф зависимостей hello](examples/diagrams/hello.svg)
+
+![Граф зависимостей jq](examples/diagrams/jq.svg)
+
+![Граф зависимостей zlib1g](examples/diagrams/zlib.svg)
+
 Для графа программа читает только обязательные зависимости из индекса.
 Прямые зависимости этих трёх пакетов совпали с выводом `apt-cache dotty`.
 Порядок для `hello` совпал с симуляцией APT без установленных пакетов.
